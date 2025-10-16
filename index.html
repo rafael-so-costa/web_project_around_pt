@@ -36,7 +36,7 @@
         </section>
         <section class="cards page__section">
           <ul class="cards__list">
-            <li class="card">
+            <!--<li class="card">
               <img
                 class="card__image"
                 src="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_yosemite.jpg"
@@ -155,8 +155,27 @@
                   type="button"
                 ></button>
               </div>
-            </li>
+            </li>-->
           </ul>
+
+          <template id="card-template">
+            <li class="card">
+              <img class="card__image" src="" alt="" />
+              <button
+                class="card__delete-button"
+                type="button"
+                aria-label="Excluir"
+              ></button>
+              <div class="card__description">
+                <h2 class="card__title"></h2>
+                <button
+                  class="card__like-button"
+                  type="button"
+                  aria-label="Curtir"
+                ></button>
+              </div>
+            </li>
+          </template>
         </section>
       </main>
       <footer class="footer page__section">
@@ -214,6 +233,7 @@
           </form>
         </div>
       </div>
+
       <div class="popup" id="image-popup">
         <div class="popup__content popup__content_content_image">
           <button
